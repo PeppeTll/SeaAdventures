@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
+import { useState } from "react";
 
 //Image
 import hero from "@/assets/images/hero.jpeg";
@@ -12,8 +12,14 @@ import Hero from "@/components/hero";
 import CardList from "@/components/cardList";
 import Footer from "@/components/footer";
 import RandomList from "@/components/ramdomList";
+import PortList from "@/components/portList";
 
 export default function Home() {
+	const [value, setValue] = useState("tutti");
+
+	const onHandleSelect = (e) => {
+		setValue(e.target.value);
+	};
 	return (
 		<>
 			<Head>
@@ -25,7 +31,17 @@ export default function Home() {
 			<main className={styles.main}>
 				<Header />
 				<Hero src={hero} text={"Lorem ipsum dolor sit amet"} />
-				<CardList />
+				<div className={styles.main__select}>
+					<select
+						className={styles.main__select__style}
+						onChange={onHandleSelect}
+						value={value}
+					>
+						<option value="tutti">Tutti</option>
+						<option value="porto">Mostra per porto di partenza</option>
+					</select>
+				</div>
+				{value === "tutti" ? <CardList /> : <PortList />}
 				<Hero
 					src={banner}
 					text={"+20 Destinazioni +15 Imbarcazioni +40 Itinerari"}

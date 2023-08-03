@@ -1,91 +1,281 @@
-.Card {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
-  padding: 20px;
-  background-color: $secondary;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: $primary;
-
-  &__costType {
+@media screen and (max-width: 767px) {
+  .Card {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-  }
-
-  &__title {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-
-  &__departure {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    &__left {
-
-      &__title {
-        color: $text;
-      }
-
-    }
-  }
-
-  &__date {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    &__left {
-
-      &__houre {
-        color: $text;
-      }
-    }
-
-    &__right {
-
-      &__houre {
-        color: $text;
-      }
-    }
-  }
-
-  &__available {
-    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    background-color: $secondary;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    gap: 10px;
+    color: $primary;
 
-    &__info {
+    &__costType {
       width: 100%;
       display: flex;
       justify-content: flex-start;
       align-items: center;
       gap: 5px;
+    }
 
-      &__label {
-        color: $text;
+    &__title {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    &__departure {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &__left {
+
+        &__title {
+          color: $text;
+        }
+
       }
     }
-  }
 
-  &__button {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: $primary;
-    color: #ffffff;
-    font-weight: 600;
+    &__date {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &__left {
+
+        &__houre {
+          color: $text;
+        }
+      }
+
+      &__right {
+
+        &__houre {
+          color: $text;
+        }
+      }
+    }
+
+    &__available {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &__info {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+
+        &__label {
+          color: $text;
+        }
+      }
+    }
+
+    &__button {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: $primary;
+      color: #ffffff;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .Card {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $primary;
+
+    &__costType {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+    }
+
+    &__title {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    &__departure {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &__left {
+
+        &__title {
+          color: $text;
+        }
+
+      }
+    }
+
+    &__date {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &__left {
+
+        &__houre {
+          color: $text;
+        }
+      }
+
+      &__right {
+
+        &__houre {
+          color: $text;
+        }
+      }
+    }
+
+    &__available {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &__info {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+
+        &__label {
+          color: $text;
+        }
+      }
+    }
+
+    &__button {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: $primary;
+      color: #ffffff;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Card {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $primary;
+
+    &__costType {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+    }
+
+    &__title {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+
+    &__departure {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &__left {
+
+        &__title {
+          color: $text;
+        }
+
+      }
+    }
+
+    &__date {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      &__left {
+
+        &__houre {
+          color: $text;
+        }
+      }
+
+      &__right {
+
+        &__houre {
+          color: $text;
+        }
+      }
+    }
+
+    &__available {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &__info {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+
+        &__label {
+          color: $text;
+        }
+      }
+    }
+
+    &__button {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: $primary;
+      color: #ffffff;
+      font-weight: 600;
+    }
   }
 }
