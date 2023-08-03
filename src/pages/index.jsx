@@ -9,6 +9,7 @@ import banner from "@/assets/images/banner.jpeg";
 //components
 import Header from "@/components/header";
 import Hero from "@/components/hero";
+import CardList from "@/components/cardList";
 
 export default function Home() {
 	return (
@@ -22,6 +23,7 @@ export default function Home() {
 			<main className={styles.main}>
 				<Header />
 				<Hero img={hero} text={"Lorem ipsum dolor sit amet ..."} />
+				<CardList />
 			</main>
 		</>
 	);
