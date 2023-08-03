@@ -34,9 +34,11 @@ const RandomList = () => {
 	return (
 		<div className={styles.RandomList}>
 			<h3 className={styles.RandomList__title}>AVVENTURE DA SCOPRIRE</h3>
-			{randomList.map((data) => (
-				<Card data={data} key={data.id} />
-			))}
+			<div className={styles.RandomList__list}>
+				{randomList.map((data) => (
+					<Card data={data} key={data.id} />
+				))}
+			</div>
 		</div>
 	);
 };
