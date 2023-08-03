@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from "./index.module.scss";
 
-const Hero = ({ img, text }) => {
+const Hero = ({ src, text }) => {
 	return (
 		<div className={styles.Hero}>
-			<Image src={img} alt={"hero"} className={styles.Hero_image} />
-			<h2 className={styles.Hero_title}>{text}</h2>
+			<Image src={src} alt={"hero"} className={styles.Hero__image} />
+			<h1 className={styles.Hero__title}>{text}</h1>
 		</div>
 	);
 };
