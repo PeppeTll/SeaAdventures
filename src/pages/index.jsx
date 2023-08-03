@@ -2,6 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
 
+//Image
+import hero from "@/assets/images/hero.jpeg";
+import banner from "@/assets/images/banner.jpeg";
+
+//components
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import CardList from "@/components/cardList";
+import Footer from "@/components/footer";
+
 export default function Home() {
 	return (
 		<>
@@ -11,7 +21,16 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className={styles.main}></main>
+			<main className={styles.main}>
+				<Header />
+				<Hero src={hero} text={"Lorem ipsum dolor sit amet"} />
+				<CardList />
+				<Hero
+					src={banner}
+					text={"+20 Destinazioni +15 Imbarcazioni +40 Itinerari"}
+				/>
+				<Footer />
+			</main>
 		</>
 	);
 }
