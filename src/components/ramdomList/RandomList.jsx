@@ -12,7 +12,7 @@ const RandomList = () => {
 		const selectedObjects = [];
 		const tempList = data.slice();
 
-		while (selectedObjects.length <= 8) {
+		while (selectedObjects.length < 8) {
 			const randomIndex = Math.floor(Math.random() * tempList.length);
 			const selectedObject = tempList[randomIndex];
 
