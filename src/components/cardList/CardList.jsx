@@ -12,9 +12,11 @@ const CardList = () => {
 	};
 	return (
 		<div className={styles.CardList}>
-			{data.slice(0, step).map((data) => (
-				<Card data={data} key={data.id} />
-			))}
+			<div className={styles.CardList__list}>
+				{data.slice(0, step).map((data) => (
+					<Card data={data} key={data.id} />
+				))}
+			</div>
 			{step <= data.length && (
 				<button className={styles.CardList__btn} onClick={onHandleStep}>
 					MOSTRA ALTRI
