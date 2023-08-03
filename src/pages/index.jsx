@@ -3,9 +3,11 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
 
 //Image
-import logo from "@/assets/images/logo.svg";
-import hero from "@/assets/images/hero.jpeg";
+import hero from "@/assets/heroes/hero.jpeg";
 import banner from "@/assets/images/banner.jpeg";
+
+//components
+import Header from "@/components/header";
 
 export default function Home() {
 	return (
@@ -16,7 +18,9 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className={styles.main}></main>
+			<main className={styles.main}>
+				<Header />
+			</main>
 		</>
 	);
 }
