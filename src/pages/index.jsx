@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
 
 //Image
-import hero from "@/assets/heroes/hero.jpeg";
+import hero from "@/assets/images/hero.jpeg";
 import banner from "@/assets/images/banner.jpeg";
 
 //components
