@@ -3,9 +3,9 @@
     width: 100%;
     position: relative;
 
-    &_image {
+    &__image {
       width: 100%;
-      height: 400px;
+      height: 500px;
       object-fit: cover;
       object-position: center;
     }
@@ -17,16 +17,17 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      background-color: #0000002d;
+      background-color: #212d5573;
       z-index: 2;
     }
 
-    &_title {
+    &__title {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       width: 100%;
+      padding: 35px;
       display: flex;
       justify-content: center;
       align-items: center;

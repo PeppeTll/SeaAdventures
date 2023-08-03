@@ -10,6 +10,7 @@ import banner from "@/assets/images/banner.jpeg";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import CardList from "@/components/cardList";
+import Footer from "@/components/footer";
 
 export default function Home() {
 	return (
@@ -22,8 +23,13 @@ export default function Home() {
 			</Head>
 			<main className={styles.main}>
 				<Header />
-				<Hero img={hero} text={"Lorem ipsum dolor sit amet ..."} />
+				<Hero src={hero} text={"Lorem ipsum dolor sit amet"} />
 				<CardList />
+				<Hero
+					src={banner}
+					text={"+20 Destinazioni +15 Imbarcazioni +40 Itinerari"}
+				/>
+				<Footer />
 			</main>
 		</>
 	);
