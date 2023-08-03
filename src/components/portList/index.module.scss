@@ -1,0 +1,25 @@
+.PortList {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    &__title {
+      width: 100%;
+      background-color: $primary;
+      color: #ffffff;
+      padding: 20px;
+    }
+  }
+}
