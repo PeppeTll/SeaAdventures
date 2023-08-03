@@ -1,21 +1,49 @@
-.RandomList {
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  color: $primary;
-
-  &__list {
+@media screen and (max-width: 1023px) {
+  .RandomList {
     width: 100%;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 15px;
     color: $primary;
+
+    &__list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 30px;
+      color: $primary;
+    }
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .RandomList {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: $primary;
+    margin: 30px 0;
+
+    &__list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      color: $primary;
+    }
+  }
+
 }
