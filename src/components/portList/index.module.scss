@@ -22,4 +22,11 @@
       padding: 20px;
     }
   }
+
+  &__select {
+    width: 100%;
+    padding: 10px 20px;
+    color: $primary;
+    font-size: 20px;
+  }
 }
