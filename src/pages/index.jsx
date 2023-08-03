@@ -11,6 +11,7 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import CardList from "@/components/cardList";
 import Footer from "@/components/footer";
+import RandomList from "@/components/ramdomList";
 
 export default function Home() {
 	return (
@@ -29,6 +30,7 @@ export default function Home() {
 					src={banner}
 					text={"+20 Destinazioni +15 Imbarcazioni +40 Itinerari"}
 				/>
+				<RandomList />
 				<Footer />
 			</main>
 		</>

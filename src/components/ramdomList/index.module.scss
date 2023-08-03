@@ -1,0 +1,10 @@
+.RandomList {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: $primary;
+}
