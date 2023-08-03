@@ -44,7 +44,7 @@ export default function Home() {
 				{value === "tutti" ? <CardList /> : <PortList />}
 				<Hero
 					src={banner}
-					text={"+20 Destinazioni +15 Imbarcazioni +40 Itinerari"}
+					text={`+20  Destinazioni +15 Imbarcazioni +40 Itinerari`}
 				/>
 				<RandomList />
 				<Footer />
